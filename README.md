@@ -1,1 +1,1 @@
-A travel blog whch describes about a heritage home stay in Kerala.
+A travel blog which describes about a heritage home stay in Kerala.
