@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalathoor Heritage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: rgb(255, 255, 255);
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            margin-bottom: 2rem;
+        }
+        .images {
+            display:flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .images img {
+        
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 1rem);
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensure images maintain aspect ratio and fill the container */
+     
+        }
+        @media (max-width: 768px) {
+            .images img {
+                width: calc(50% - 1rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .images img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Thalathoor Heritage </h1>
+</header>
+
+<div class="container">
+    <div class="content">
+        <h2>To the soul of Kerala</h2>
+        <p>
+            January 23 (2023) gave unforgettable experiences to the Department of Tourism, Central Kerala University. Unwilling to confine ourselves between classroom walls or bright screens, we were busy exploring the new tourism possibilities.
+
+            On this unexpected fall day, our maiden journey continued on the university bus with the teachers. The target was 'Talathur Heritage', unreached by many in Kasaragod district. This 400-year-old heritage house exudes a peaceful and happy atmosphere. It was established on August 15, 2013, in the village 'Paravanatukkam' of the district. This 5-acre land of Mrs. Shyamala and her husband, Mr. Dr. KK Nair, beckons tourists with many farms, gourd groves and a mirror-like swimming pool.
+             
+            In the 1970s, when Shyamala Nair, who had received higher education from Bangalore, reached Kasaragod, she was isolated amid her husband's busy schedule and in the unfamiliarity of the hinterland. But the whole story changed when he realized he had a passion for business and the possibility of hospitality. At 60, she started her venture "Talathur Heritage" and set foot in the field by defying limitations and putting on a one-person show as a receptionist, cook and guide.<br>
+                                                                     The twice-renovated Thalathur house is full of handicrafts, antique paintings, period furniture and utensils adorning every nook and cranny. Even though there are many buildings like Bhargaveenilayam, which Malayali people hesitate to enter without looking back, entrepreneur Shyamala Nair, who keeps it indescribably beautiful and safe, along with antiques such as Patthayam ivory, teak beds, pastures, etc, she is a good role model and pride for us. Mother's smile, loving mannerisms and home-cooked food take us back to the olden days. 
+            
+            Although minor problems exist due to the children and sons-in-law living outside, a few faithful people are still here to work. Now, she is studying how to attract tourists in the future by burning her talent and taste. Once you flip through the tourist diary of this place, where many foreign and domestic tourists have landed, you will know that the new life of the old one you long for is flashing in your heart. Shyamalanair told our girl classmates during the graduation, "You children should not stay at home". No one wants to come back here again and sit on that swing as if on a throne when he returns from 'Talathur Heritage' with all his gratitude and satisfaction.
+
+        </p>
+    </div>
+
+    <div class="images">
+        <img src="{% static 'Thalathoor/images/outline.jpg'%}" alt="Description of Image 1">
+        <img src="{% static 'Thalathoor/images/bed.jpg'%}" alt="Description of Image 2">
+        <img src="{% static 'Thalathoor/images/chair.jpg'%}" alt="Description of Image 3">
+        <img src="{% static 'Thalathoor/images/flower.jpg'%}" alt="Description of Image 4">
+        <img src="{% static 'Thalathoor/images/pond.jpg'%}" alt="Description of Image 5">
+        <img src="{% static 'Thalathoor/images/pooja.jpg'%}" alt="Description of Image 6">
+    </div>
+</div>
+
+</body>
+</html>
